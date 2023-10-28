@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BRAVO EMICE BRAVO WOOOO</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe7d6;
+        }
+        header {
+            background-color: #ff6b6b;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #ff6b6b;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 10px;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        section img {
+            max-width: 100%;
+            height: auto;
+        }
+        .text-container {
+            position: relative;
+            margin-top: 20px;
+        }
+        .text-bubble {
+            background-color: #ffd700;
+            border: 2px solid #fcd000;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            animation: textAppear 2s forwards;
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        .text-bubble p {
+            margin: 0;
+        }
+        @keyframes textAppear {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .gift-image {
+            text-decoration: none;
+            display: inline-block;
+        }
+        .gift-image img {
+            max-width: 100%;
+            height: auto;
+        }
+        .gift-image:hover::after {
+            content: "sta je ovo?";
+            display: block;
+            text-align: center;
+            background-color: #ff6b6b;
+            color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #ff6b6b;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>uspjela si :DD</h1>
+    </header>
+    
+    <section>
+        <h2>BRAVO EMICE BRAVO WOOOO</h2>
+        <div class="text-container">
+            <div class="text-bubble">
+                <p>"bravo ljuby buby evo tvoj poklon srce lijepo moje"</p>
+            </div>
+        </div>
+
+        <a class="gift-image" href="https://www.desmos.com/calculator/nnohh5envf" target="_blank">
+            <img src="https://i.pinimg.com/736x/3d/d7/a2/3dd7a2c34d914e73de40383792ab7068.jpg" alt="Cute Gift">
+        </a>
+    </section>
+    
+    <footer>
+        <p>programerfr nema sta</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pomozi pikachuu Emice:(</title>
+   <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe7d6;
+        }
+        header {
+            background-color: #ff6b6b;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #ff6b6b;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 10px;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        section img {
+            max-width: 100%;
+            height: auto;
+        }
+        .text-container {
+            position: relative;
+            margin-top: 20px;
+        }
+        .text-bubble {
+            background-color: #ffd700;
+            border: 2px solid #fcd000;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            animation: textAppear 2s forwards;
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        .text-bubble p {
+            margin: 0;
+        }
+       .window {
+            background-color: #fffcf4;
+            padding: 20px;
+            border: 2px solid #ff6b6b;
+            border-radius: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .window h3 {
+            text-align: center;
+            font-size: 24px;
+            color: #ff6b6b;
+        }
+        .window p {
+            text-align: center;
+            font-size: 18px;
+        }
+        .answer-field {
+            background-color: #fffcf4;
+            border: 2px solid #ff6b6b;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+            margin: 10px auto;
+            width: 80%; /* Adjust the width as needed */
+        }
+        .submit-button {
+            background-color: #ff6b6b;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .submit-button:hover {
+            background-color: #fcd000;
+        }
+        footer {
+            background-color: #ff6b6b;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+    <script>
+        function checkAnswer() {
+            var userAnswer = document.getElementById('answer').value;
+            var correctAnswer = "x^3 + 2x^2 - 2x + C"; // The correct answer
+            
+            if (userAnswer === correctAnswer) {
+                window.location.href = "section4.html"; // Redirect to section4 if the answer is correct
+            } else {
+                alert("Nije to nazalost... nesto nece"); // Display an error message
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>HAH! e sad sam te zajebao</h1>
+    </header>
+    
+    <nav>
+        <a href="section2.html">bjezi natrag ako hoces, pa ovo je pakao :(</a>
+    </nav>
+    
+    <section>
+        <h2>Pomozi Emice draga:(</h2>
+        <div class="window">
+            <h3>Hah! Nemogući zadatak</h3>
+            <p>sta je rjesenje :(</p>
+            <p>Integral: ∫ (3x^2 + 4x - 2) dx</p>
+            <p>pazi ljuby, medju operacijskim znakovima za sabiranje, oduzimanje, mnozenje i dijeljenje su obavezni razmaci!</p>
+            <form onsubmit="checkAnswer(); return false;">
+                <input type="text" name="answer" id="answer">
+                <input type="submit" value="Provjeri odgovor">
+            </form>
+        </div>
+        <img src="https://www.thetruecolors.org/wp-content/uploads/2021/03/Screen_Shot_2018-10-25_at_11.02.15_AM.png" alt="Emice Image">
+    </section>
+    
+    <footer>
+        <p>programerfr nema sta</p>
+    </footer>
+</body>
+</html>
